@@ -32,10 +32,6 @@ const controlRecipes = async function () {
   }
 };
 
-const newFeature = function () {
-  console.log('Welcome');
-};
-
 const controlPagination = function (goToPage) {
   // Render new results
   resultsView.render(model.getSearchedResultsPage(goToPage));
@@ -115,6 +111,5 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchedRecipes);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 init();
